@@ -1,0 +1,26 @@
+# Core Django
+Django==5.0.*
+gunicorn==21.2.*  # برای دپلوی
+
+# Database
+psycopg2-binary==2.9.*  # اگر از PostgreSQL استفاده می‌کنید
+# یا برای SQLite (پیش‌فرض):
+sqlite3==3.*  # معمولاً با پایتون نصب می‌شود
+
+# Frontend/UI
+whitenoise==6.6.*  # مدیریت فایل‌های استاتیک
+django-bootstrap5==23.3.*  # برای یکپارچه‌سازی Bootstrap
+
+# QR Code (با توجه به قابلیت SVG QR Code در پروژه)
+qrcode==7.4.*
+svgwrite==1.4.*  # برای تولید QR کد در فرمت SVG
+
+# Authentication (اختیاری)
+django-allauth==0.58.*  # اگر از سیستم احراز هویت پیشرفته استفاده می‌کنید
+
+# Environment Management
+python-dotenv==1.0.*  # برای مدیریت متغیرهای محیطی
+
+# Development (فقط برای محیط توسعه)
+django-debug-toolbar==4.2.*
+pylint-django==2.5.*
